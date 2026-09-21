@@ -55,7 +55,17 @@ The application supports **JWT-based authentication**, **role-based access contr
 - React Router
 - Bootstrap
 
----
+### API Table
+
+| Method | Endpoint              | Access     |
+| ------ | --------------------- | ---------- |
+| POST   | `/api/auth/login`     | Public     |
+| GET    | `/api/employees`      | USER/ADMIN |
+| POST   | `/api/employees`      | ADMIN      |
+| PUT    | `/api/employees/{id}` | ADMIN      |
+| DELETE | `/api/employees/{id}` | ADMIN      |
+
+--
 
 ## ⚙️ Setup Instructions
 
@@ -73,3 +83,35 @@ mvn spring-boot:run
 cd ems-frontend
 npm install
 npm run dev
+
+### Database ER Diagram
+┌──────────────┐
+│    USER      │
+├──────────────┤
+│ id           │
+│ username     │
+│ password     │
+│ role         │
+└──────┬───────┘
+       │
+       │
+┌──────▼──────────┐
+│    EMPLOYEE     │
+├─────────────────┤
+│ id              │
+│ firstName       │
+│ lastName        │
+│ email           │
+│ department_id   │
+│ designation     │
+│ salary          │
+│ status          │
+└──────┬──────────┘
+       │
+       │
+┌──────▼──────────┐
+│   DEPARTMENT    │
+├─────────────────┤
+│ id              │
+│ name            │
+└─────────────────┘
