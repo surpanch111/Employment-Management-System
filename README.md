@@ -84,7 +84,7 @@ cd ems-frontend
 npm install
 npm run dev
 
-### Database ER Diagram
+### 3️⃣ Database ER Diagram
 ┌──────────────┐
 │    USER      │
 ├──────────────┤
