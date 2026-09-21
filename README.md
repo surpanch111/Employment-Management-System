@@ -83,8 +83,11 @@ mvn spring-boot:run
 cd ems-frontend
 npm install
 npm run dev
+```
 
 ### 3️⃣ Database ER Diagram
+
+```bash
 ┌──────────────┐
 │    USER      │
 ├──────────────┤
