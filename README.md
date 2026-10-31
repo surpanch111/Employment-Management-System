@@ -118,3 +118,10 @@ npm run dev
 │ id              │
 │ name            │
 └─────────────────┘
+```
+## 👨‍💻 Author & Maintainer
+
+**Anil Sharma**
+
+- 🐙 **GitHub**: [@surpanch111](https://github.com/surpanch111)
+- 💼 **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/anil-pancholi01)
